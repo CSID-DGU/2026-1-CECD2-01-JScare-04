@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* --- 네비게이션 바 --- */
+.navbar-custom {
+    background-color: #333;
+}
+
+/* --- 검색 결과 드롭다운 --- */
+.search-container {
+    position: relative;
+    width: 250px; /* 인라인 스타일 이동 */
+}
+
+#search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.search-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+}
+
+.search-item:hover {
+    background-color: #f1f3f5;
+}
+
+.search-item small {
+    color: #888;
+}
+
+/* --- 챗봇 플로팅 버튼 --- */
+#btn-aitutor-open-aiTutor {
+    /* 인라인 스타일을 여기로 모두 이동 */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 10000;
+    color: white;
+    background-color: #333;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    
+    /* 애니메이션 효과 */
+    transition: transform 0.2s;
+}
+
+#btn-aitutor-open-aiTutor:hover {
+    transform: scale(1.1);
+}
+
+/* --- 챗봇 창 디자인 --- */
+#chatbot-window {
+    display: none; 
+    position: fixed;
+    bottom: 80px; 
+    left: 20px;   
+    width: 320px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 9999; 
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.chat-header {
+    background-color: #333; 
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+.chat-input-area {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    background-color: white;
+    display: flex;
+    gap: 5px;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}

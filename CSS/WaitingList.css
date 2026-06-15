@@ -1,0 +1,69 @@
+/* 공통 카드 스타일 */
+.panel-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.panel-box:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.panel-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* 왼쪽 대기 리스트 */
+.waiting-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.waiting-list li {
+  background: #f8fbff;
+  border: 1px solid #dfe8f5;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+.waiting-list li:hover {
+  background: #e8f3ff;
+  transform: translateY(-2px);
+}
+
+.waiting-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+.waiting-info {
+  font-size: 13px;
+  color: #666;
+}
+
+/* 오른쪽 수납 요청 테이블 */
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.receipt-table th, .receipt-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+.receipt-table th {
+  background: #f8fbff;
+  color: #2c3e50;
+  font-weight: 600;
+}
+.receipt-table tr:hover {
+  background: #e8f3ff;
+}

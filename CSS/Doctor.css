@@ -1,0 +1,35 @@
+.doctor-container {
+  display: flex;
+  height: 100vh;
+  background: #f9fafc;
+}
+
+.waiting-section, .history-section, .form-section {
+  flex: 1;
+  padding: 15px;
+  background: white;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.waiting-section { width: 25%; }
+.history-section { width: 35%; }
+.form-section { width: 40%; border-right: none; }
+
+.patient-item, .history-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: #f8fbff;
+  transition: all 0.2s;
+}
+.patient-item:hover, .history-item:hover {
+  background: #e9f3ff;
+}
+.empty {
+  color: #888;
+  text-align: center;
+  margin-top: 40px;
+}

@@ -1,0 +1,27 @@
+# Java build outputs
+*.class
+*.war
+*.ear
+target/
+build/
+out/
+
+# Local dependencies copied into old-style web apps
+WEB-INF/lib/*.jar
+!WEB-INF/lib/README.md
+
+# IDE and OS files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local environment
+.env
+*.local
+
+# Logs
+*.log
